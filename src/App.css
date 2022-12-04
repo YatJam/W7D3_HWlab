@@ -1,0 +1,43 @@
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  animation: flow 3s ease-in-out infinite;
+  background: linear-gradient(-60deg, red, yellow, blue, purple);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+ul {
+  border: 1px dotted grey;
+  margin: 10px;
+  padding: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px;
+  padding: 7px;
+}
+
+hr {
+  width: 90%;
+}
